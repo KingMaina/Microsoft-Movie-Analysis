@@ -1,72 +1,70 @@
-# Phase 1 Project Template - Minimum Viable Product (MVP)
+# 🎥 Microsoft_Movie_Analysis 🎥
 
 ![blueprint](images/blueprint.png)
 
-This repository is like a blueprint, providing structure for your first End of Phase Project. We suggest you base your Phase 1 project off of this repository so you can focus less on formatting and organization, and more on the _analysis and communication skills_ that will support your progress through the course. This template is designed to make your project portfolio-ready in order to impress the future employers who will review it. 
+## Overview
 
-## Repository Contents
+This project analyzes movie data to provide recommendations for Microsoft's new movie studio. The analysis focuses on the following questions:
 
-Below is a list of the contents of this repository - instructions for using them are in the next section.
+- What are the most popular movie genres?
+- What is the average budget for each genre?
+- What is the average revenue for each genre?
+- What is the average return on investment for each genre?
+- What is the average runtime for each genre?
+- What is the average rating for each genre?
+- What is the average number of votes for each genre?
+- What studios have the highest average return on investment/ gross revenue?
 
-- `README.md`: The README for this repo branch explaining it's contents - you're reading it now
-- `TEMPLATE_README.md`: An example of a project README that provides a brief overview of your whole project
-- `dsc-phase1-project-template.ipynb`: A starter Jupyter Notebook with headings, code examples and guiding questions
-- `DS_Project_Presentation_Template.pdf`: A starter slide deck presenting your project - here is an [editable version](https://docs.google.com/presentation/d/1PaiH1bleXnhiPjTPsAXQSiAK0nkaRlseQIr_Yb-0mz0/copy)
-- `zippedData` folder: A folder for the data you reference with your code
-- `images` folder: A folder for the images you reference in your files 
-- `.gitignore`: A hidden file that tells git to not track certain files and folders
+## Contents
 
-## Instructions For Using This Repository
+- `README.md`: Explains the contents of the project.
+- `Microsoft_Movie_Analysis.ipynb`: A Jupyter Notebook containing the analysis process for this project
+- `Microsoft_Movie_Analysis.pdf`: A PDF of the presentation slides for the project
+- `zippedData` folder: A folder for the data used in the analysis.
+- `images` folder: A folder for the images referenced in the analysis.
+- `.gitignore`: A hidden file that tells git to not track certain files and folders.
 
-### Fork This Repository
+## Business Problem
 
-**For a group project**, have only one team member do these steps:
+Microsoft is creating a new movie studio, and they want to know what types of films are currently doing the best at the box office. They have asked us to explore what types of films are currently doing the best at the box office.
 
-1. Fork this repository to your personal account
-   - In GitHub, go to this repository and click the "Fork" button in the upper right
-   
-2. Change the name of your fork of this repo to a _descriptive_ name of your choosing
-   - In GitHub, go to your fork of this repo -> "Settings" -> "Options" -> "Repository Name" -> "Rename"
-   - Make the name descriptive, since potential employers will read it. Ex: "Microsoft-Movie-Analysis" is better than "Project-1"
+## Data
 
-3. Use `git clone` to clone your fork of this repo to your local computer
+The data used in this analysis comes from the following sources:
 
-4. **For a group project**, add team members as collaborators to your fork of this repo
-   - In GitHub, go to your fork of this repo -> "Settings" -> "Manage Access" -> "Invite Teams or People"
-   - Add your project team members as collaborators & send them the repo GitHub URL
+- Box Office Mojo
+- IMDB
 
-### Work In Your Fork Of This Repository
+## Methods
 
-- Work in the repo clone that you created on your local machine
-- Start writing and coding in the Jupyter Notebook `dsc-phase1-project-template.ipynb`
-- Fill in the README template in `TEMPLATE_README.md`
-- Use `git add`, `git commit`, and `git push` often to update your repo in GitHub
-   - For a refresher on how to do this and why it's important, review Topic 2: Bash and Git
+This project uses descriptive analysis to explore the data and answer the questions posed above. The analysis is presented in a Jupyter Notebook.
 
-### Use The Slide Template
+## Results
 
-1. Go to [this link](https://docs.google.com/presentation/d/1PaiH1bleXnhiPjTPsAXQSiAK0nkaRlseQIr_Yb-0mz0/copy) to make an editable copy of the slide deck in your own Google Drive account
-2. Go to "Slide," select "Change Theme," and pick a theme you like so your presentation doesn't look like everyone else's
-3. **For a group project**, click the "Share" button and add your teammates as editors
+- The analysis shows that the most popular movie genres are Action, Adventure, Sci-Fi and Drama.
+- Domestic gross sales for movies is typically around `1.4 million dollars` in domestic markets and `18.7 million dollars` in foreign markets.
 
-### Tidy Up Your Project
+## Recommendations
 
-- Change the file name of the Jupyter Notebook (`dsc-phase1-project-template.ipynb`) to something more descriptive
-- Save an appropriately-named PDF version of your slide deck to the repository
-- Rename the template readme you've been working in by running `git mv TEMPLATE_README.md README.md`
-- Delete unnecessary files from the repo using `git rm`
-   - The presentation PDF: `DS_Project_Presentation_Template.pdf`
-   - Any unused data files in the `zippedData` folder
-   - Any unused images in the `images` folder
-- Utilize the .gitignore file to ignore large unzipped data files in the `zippedData` folder
-   - Add `*.csv`,`*.tsv`, and `*.db` to the .gitignore file
+1. Microsoft should consider creating movies in the `Action`, `Drama`, `Adventure` and `Sci-Fi` as those receive high gross return in both domestic and foreign markets.
+2. Microsoft should invest in high budget movies because movies that performed well and had high returns were from high budget studios such as `Buena Vista (BV)`, `Warner Bros. (WB)` and `Dreamworks` who are well known for creating best selling movies.
+3. Microsoft should create movies with an average runtime of around `100 minutes`as this is the most commom watch time as per majority of other movies.
 
-### Submit Your Project
+## Problems and Limitations
 
-To submit your project, please follow the instructions in the "Project Submission & Review" page in the Milestones course.
+- The data used in this analysis is limited to between 2010 and 2018.
+- The data used in this analysis is limited to movies released in the United States.
+- The data used in this analysis is limited to movies that have a listed genre and revenue.
 
-***
-### Notes
+## Improvements
 
-- The visualizations in the notebook use best practices for visualization that you should try to emulate. For example, they have clear axes, descriptive titles, and appropriate number formatting
-- The `dsc-phase1-project-template.ipynb` is intended to be the _final version_ of your project. The first notebook you create will not look like this. You are encouraged to start with a very disorderly notebook and clean it as you go
+1. Explore datasets with production budgets to make compoarisons with the gross sales.
+2. Information on best perfoming actors and directors may help know which who can help positively influence the performance of a movie so that Microsoft can know who to work with when the opportunity comes.
+
+## Presentation Slides
+
+- The presentation slides for this project can be found in the file `Microsoft_Movie_Analysis.pdf`
+
+## Author
+
+- **[Andrew Maina](https://github.com/KingMaina)**
